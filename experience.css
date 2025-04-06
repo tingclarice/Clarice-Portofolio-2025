@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fddede;
+    color: #4d2b2b;
+}
+
+/* Navbar */
+.navbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #c98f8f;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar li {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a,
+a:visited,
+a:active {
+    color: #4d2b2b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7f3f52;
+}
+
+.navbar .active {
+    text-decoration: underline;
+}
+
+.navbar:hover {
+    color: #4d2b2b;
+}
+
+/* Header Section */
+.experience-header {
+    text-align: center;
+    background-color: #f5c6c6;
+    padding: 3rem 1rem 2rem;
+    margin-top: 80px;
+    padding-bottom: 60px;
+    border-radius: 20px;
+    width: 90%;
+    margin-inline: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header h1 {
+    font-size: 2.5rem;
+    font-weight: 750;
+    -webkit-text-stroke: 0.7px white;
+    stroke-width: 20%;
+    margin-bottom: 0.5rem;
+}
+
+.experience-header p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #62425F;
+}
+
+/* Experience Cards Grid */
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Individual Experience Item */
+.experience-item {
+    background-color: #fff1f1;
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-item img {
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+}
+
+.experience-item h3 {
+    font-size: 1rem;
+    color: #9B5957;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.experience-item p {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #D79694;
+    margin: 0;
+}
+
+/* Id Styling */
+#aka {
+    padding-top: 50px;
+}
+
+#coffee img {
+    margin-bottom: -28px;
+}
+
+#nplc img {
+    padding-top: 37px;
+}
+
+#geng img {
+    padding-top: 5px;
+    margin-bottom: -5px;
+}
+
+#imtpulse img {
+    margin-top: 10px;
+    margin-bottom: -6px;
+}
+
+#apple img {
+    margin-top: 15px;
+}
+
+#gend img {
+    margin-bottom: -16px;
+}
+
+#music img {
+    margin-bottom: -0.06px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    background-color: #c98f8f;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer-contact, .footer-links {
+    flex: 1 1 300px;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
